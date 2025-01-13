@@ -1,11 +1,13 @@
-# awssdkcpp
-AWS SDK C++ installation script Ubuntu
+# AWS sdk C++
 
-if you having proplems with building and installing AWS C++ SDK, may be have to reinstall developers packets before
-Here an example how partually to install complete S3 framework
+## AWS SDK C++ Installation Script for Ubuntu
 
-Not remove souces at once if you are not sure the cope of libreries, just simply you can add nopt installed library part after
+If you are having problems with building and installing the AWS C++ SDK, you may need to reinstall the developer packages first. 
 
-cmake
-...
--DBUILD_ONLY="<here put missed libraries names ; - is separator>"
+Here is an example of how to partially install the complete S3 framework:
+
+Do not remove the sources at once if you are not sure about the scope of the libraries. Simply add the not installed library parts after:
+
+```bash
+cmake \
+-DBUILD_ONLY="<here put missed libraries names where ';' - is separator>"
